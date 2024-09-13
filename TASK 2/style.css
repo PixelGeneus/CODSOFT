@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+section{
+    min-height: 100vh;
+    min-width: 100wh;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url("public/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+nav{
+    height: 80px;
+}
+
+nav h1{
+    float: left;
+    color: white;
+    line-height: 80px;
+    font-size: 35px;
+    font-size: inline;
+    text-shadow: 0 0 20px white;
+}
+
+nav ul{
+    float: right;
+    line-height: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    padding: 7px 8px;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+    color: black;
+    text-shadow: 0 0 50px black;
+}
+
+nav ul li .active{
+    background-color: aqua;
+    color: black;
+}
+
+.title{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(25vh);
+    color: white;
+}
+
+.title h1{
+    font-size: 40px;
+    color: #a6ffef;
+    text-shadow: 0 0 10px aqua;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.title h1 span{
+    color: #f5b7d0;
+}
+
+.title h2{
+    color: #edce00;
+    text-shadow: 0 0 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.title p{
+    font-size: 18px;
+    text-shadow: 0 0 10px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.title .button{
+    color: black;
+    text-decoration: none;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background-color: aquamarine;
+    border-radius: 25px;
+    box-shadow: 0 0 10px white;
+    transition: 0.5s ease;
+}
+
+.title .button:hover{
+    background-color: chartreuse;
+    transform: scale(1.1);
+}
