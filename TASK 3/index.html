@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MY CAL<span>CULATOR</span></h1>
+        <div class="calculator-body">
+            <div class="screen">
+                <input id="display" class="input" readonly>
+            </div>
+            <div class="button">
+                <table>
+                    <!--HERE ARE OPERATORS-->
+                    <tr>
+                        <td>
+                            <button class="operators" id="clear"  class="button" onclick="clearscreen()">AC</button>
+                        </td>
+                        <td>
+                            <button class="operators" id="operator"  class="button" onclick="output('/')">/</button>
+                        </td>
+                        <td>
+                            <button class="operators" id="operator"  class="button" onclick="output('*')">*</button>
+                        </td>
+                        <td>
+                            <button class="operators" id="backspace"  class="button" onclick="back()">DEL</button>
+                        </td>
+                    </tr>
+                    <!--HERE IS 1ST ROW OF NUMBERS-->
+                    <tr>
+                        <td>
+                            <button class="numbers" id="7"  class="button" onclick="output('7')">7</button>
+                        </td>
+                        <td>
+                            <button class="numbers" id="8"  class="button" onclick="output('8')">8</button>
+                        </td>
+                        <td>
+                            <button class="numbers" id="9"  class="button" onclick="output('9')">9</button>
+                        </td>
+                        <td>
+                            <button class="operators" id="operator"  class="button" onclick="output('-')">-</button>
+                        </td>
+                    </tr>
+                    <!--HERE IS 2ND ROW OF NUMBERS-->
+                    <tr>
+                        <td>
+                            <button class="numbers" id="4" class="button" onclick="output('4')">4</button>
+                        </td>
+                        <td>
+                            <button class="numbers" id="5"  class="button" onclick="output('5')">5</button>
+                        </td>
+                        <td>
+                            <button class="numbers" id="6"  class="button" onclick="output('6')">6</button>
+                        </td>
+                        <td>
+                            <button class="operators" id="operator"  class="button" onclick="output('+')">+</button>
+                        </td>
+                    </tr>
+                    <!--HERE IS 3RD ROW OF NUMBERS-->
+                    <tr>
+                        <td>
+                            <button class="numbers" id="1"  class="button" onclick="output('1')">1</button>
+                        </td>
+                        <td>
+                            <button class="numbers" id="2"  class="button" onclick="output('2')">2</button>
+                        </td>
+                        <td>
+                            <button class="numbers" id="3"  class="button" onclick="output('3')">3</button>
+                        </td>
+                        <td>
+                            <button class="operators" id="operator"  class="button" onclick="output('%')">%</button>
+                        </td>
+                    </tr>
+                    <!--HERE IS 4TH ROW OF NUMBERS-->
+                    <tr>
+                        <td>
+                            <button class="operators" id="00"  class="button" onclick="output('00')">00</button>
+                        </td>
+                        <td>
+                            <button class="numbers" id="0"  class="button" onclick="output('0')">0</button>
+                        </td>
+                        <td>
+                            <button class="operators" id="dot"  class="button" onclick="output('.')"">.</button>
+                        </td>
+                        <td>
+                            <button class="operators" id="equal"  class="button" onclick="equal()">=</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

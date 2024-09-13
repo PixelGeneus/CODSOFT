@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+*{
+    background-color: teal;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: 0.5s ease;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+span{
+    color:white;
+}
+
+.calculator-body{
+    background-color: darkseagreen;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+}
+
+.screen, input{
+    
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 35px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+
+button{
+    background-color: papayawhip;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 25px;
+    transition: all 200ms ease;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 25px black;
+}
+
+
